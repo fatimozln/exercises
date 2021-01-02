@@ -16,6 +16,6 @@ for i in range(0, 3):
     item = input("item:")
     inqueue(item)
 
-print(dequeue())
-print(dequeue())
-print(dequeue())
+
+for i in range(0, len(q)):
+    print(dequeue())
