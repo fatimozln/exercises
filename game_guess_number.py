@@ -1,7 +1,6 @@
 
 import random
 current_number = random.randint(1, 10)
-print(current_number)
 
 
 def run_game():
@@ -15,6 +14,13 @@ def run_game():
             if guess == current_number:
                 print("wine!the current number is", current_number)
                 break
+
+            elif guess > current_number:
+                print("A number smaller than", guess)
+
+            elif guess < current_number:
+                print("A number higher than", guess)
+
             else:
                 print("lost!")
 
