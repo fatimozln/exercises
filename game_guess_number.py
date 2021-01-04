@@ -1,10 +1,12 @@
 
 import random
-current_number = random.randint(1, 10)
+#current_number = random.randint(1, 10)
 
 
 def run_game():
     a = 0
+    guess = 0
+    current_number = random.randint(1, 10)
     while a < 5:
         try:
             guess = int(input("Guess a number between 1 and 10:"))
@@ -28,6 +30,12 @@ def run_game():
 
     else:
         print("You could not guess correctly. Correct number =", current_number)
+
+    again = input("Do you want to play again?[yes/no]")
+    if again.lower() == "yes":
+        run_game()
+    else:
+        print("  goodbye  :)")
 
 
 run_game()
