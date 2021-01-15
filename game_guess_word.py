@@ -22,9 +22,9 @@ while a < 3:
         print("wine :)")
         break
     else:
-        print("lose: (")
+        print("no :(")
 
     a += 1
 
 else:
-    print("...the current name=", name)
+    print("LOSE...the current name=", name)
